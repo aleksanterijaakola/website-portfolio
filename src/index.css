@@ -16,13 +16,69 @@ body {
   background: var(--clr-bcg);
   color: var(--clr-font);
   line-height: 1.5;
-  font-size: 0.875rem;
-  transition: all 0.3s linear;
+  font-size: 0.4rem;
+  transition: all 0.3s linear; 
 }
 
-h1 {
-  color: var(--clr-primary);
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
   text-transform: capitalize;
-  letter-spacing: 2px;
-  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
 }
+h1 {
+  font-size: 2rem;
+  position: relative;
+  min-height: 100vh;
+  margin-top: -5rem;
+  margin-left: 20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+}
+h2 {
+  font-size: 1.5rem;
+  position: relative;
+  margin-top: -1rem;
+  top: -280px;
+  margin-left: 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center; 
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+.tapani h1 {
+  text-transform: none;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.gitlab {
+  font-size: 1.25rem;;
+  position: relative;
+  justify-items: center;
+  margin-left: 30rem;
+  top: -260px
+}
+.ig {
+  font-size: 1.25rem;;
+  position: relative;
+  justify-items: center;
+  margin-left: 0.25rem;
+  top: -260px;
+  
+}
+
