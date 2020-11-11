@@ -1,23 +1,24 @@
 import React from "react";
-import { AiOutlineGitlab, AiOutlineInstagram } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 
 function App() {
   return (
-    <main>
-      <nav>
-        <article className="tapani">
-          <h1>Hi, I'm Aleksanteri</h1>
-          <h2>Software Engineer.</h2>
-          <h3>CSS / Javascript / React</h3>
-          <button className="gitlab">
-            <AiOutlineGitlab />
-          </button>
-          <button className="ig">
-            <AiOutlineInstagram />
-          </button>
-        </article>
-      </nav>
-    </main>
+    <>
+      <div>
+        <h1>About.</h1>
+        <h2>Find out more on GitHub</h2>
+      </div>
+      <div className="icons">
+        <FaGithub className="github-icon" />
+        <FaGitlab className="gitlab-icon" />
+        <FaInstagram className="instagram-icon" />
+        <FaLinkedin className="linkedin-icon"/>
+      </div>
+    </>
   );
 }
 
