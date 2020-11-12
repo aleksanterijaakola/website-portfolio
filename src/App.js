@@ -1,24 +1,17 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaGitlab } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1>About.</h1>
-        <h2>Find out more on GitHub</h2>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Navbar />
+        </Switch>
       </div>
-      <div className="icons">
-        <FaGithub className="github-icon" />
-        <FaGitlab className="gitlab-icon" />
-        <FaInstagram className="instagram-icon" />
-        <FaLinkedin className="linkedin-icon"/>
-      </div>
-    </>
+    </Router>
   );
 }
 
